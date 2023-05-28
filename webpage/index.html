@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/general_styles.css">
+    <link rel="stylesheet" href="styles/button_styles.css">
+    <link rel="stylesheet" href="styles/img_styles.css"> 
+    <link rel="stylesheet" href="styles/text_styles.css">
+
+    <link rel="stylesheet" href="styles/img_animations.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1>Cloud computing - project 1</h1>
+
+    <div class="upload_image">
+        <form id="imageForm">
+            <label for="imageInput">Choose image:</label>
+            <input type="file" accept="image/*" id="imageInput" onchange="previewImage(event)">
+
+            <label for="imageTitle">Insert image title:</label>
+            <input type="text" id="imageTitle">
+            <button type="button" onclick="processImage()">Process</button>
+            
+            <img id="preview" src="#" style="display: none;">
+        </form>
+    </div>
+
+    <div class="container">
+
+        <div class="column">
+            <h2>Before</h2>
+            <div id="imageContainer1"></div>
+        </div>
+
+        <div class="column">
+            <h2>After</h2>
+            <div id="imageContainer2"></div>    
+        </div>
+    </div>
+
+</body>
+</html>
