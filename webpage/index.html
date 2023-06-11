@@ -22,7 +22,7 @@
     <div class="upload_image">
         <form id="imageForm">
             <label for="imageInput">Choose image:</label>
-            <input type="file" accept="image/*" id="imageInput" onchange="previewImage(event)">
+            <input type="file" accept="image/png" id="imageInput" onchange="previewImage(event)">
 
             <label for="imageTitle">Insert image title:</label>
             <input type="text" id="imageTitle">
@@ -44,6 +44,17 @@
             <div id="imageContainer2"></div>    
         </div>
     </div>
+
+    <button type="button" onclick="processLatestImage()">Get history</button>
+
+    <div class="container">
+        <div class="column">
+            <h2>Latest images</h2>
+            <div id="lastest_images"></div>
+        </div>
+
+    </div>
+
 
 </body>
 </html>
