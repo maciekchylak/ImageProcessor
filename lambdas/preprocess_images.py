@@ -1,3 +1,5 @@
+#name of the function on AWS Lambda: test_lambda_py3_8
+
 import boto3
 import os
 import sys
