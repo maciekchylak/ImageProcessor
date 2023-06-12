@@ -1,3 +1,5 @@
+#name of the Lambda funtion on AWS: get_latest_images
+
 import boto3
 import os
 import sys
